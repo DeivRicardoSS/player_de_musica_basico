@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Musica</title>
+    <link rel="shortcut icon" href="assets/img/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/musicas.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+<img src="assets/img/ballin.jpg" width="300px">
+<h2>Ballin</h2>
+<i>Villager</i>
+<div class="progresso">
+    <progress value="0" max="1" id="barra"></progress>
+    <div class="ponto"></div>
+</div>
+
+<div class="time">
+    <p class="inicio">0:00</p>
+    <p class="fim">2:30</p>
+</div>
+<div class="controls">
+    <span class="material-symbols-outlined" id="back" onclick="voltarMusica()">
+        skip_previous
+        </span>
+    <span class="material-symbols-outlined btplay" id="play" onclick="tocarMusica()">
+        play_arrow
+        </span>
+    <span class="material-symbols-outlined btpause" id="pause" onclick="pausarMusica()">
+        pause
+        </span>
+    <span class="material-symbols-outlined btsetas" id="next" onclick="pularMusica()">
+        skip_next
+        </span>
+    <audio>
+        <source src="musicas/Ballin.mp3">
+    </audio>
+</div>
+<script src="assets/js/js.js"></script>
+</body>
+</html>
